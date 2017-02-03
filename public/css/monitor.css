@@ -1,0 +1,35 @@
+.enter_div{
+	width: 960px;
+	height: 250px;
+	position: relative;
+	/*border: 1px solid red;*/
+	/*left: 14%;*/
+}
+
+.enter_div .enter_title{
+	height: 40px;
+	width: 200px;
+	position: absolute;
+	margin: 50px auto auto 14%;
+
+}
+
+.enter_div .enter_title h2{
+	position: relative;
+	left: 50px;
+	color: blue;
+	font-size: 20px;
+}
+
+.enter_edu{
+	background: url('../images/xuzhou_bg.jpg');
+
+}
+
+.enter_country{
+	background: url('../images/xuzhou_bg2.jpg');
+}
+
+.enter_school{
+	background: url('../images/xuzhou_bg3.jpg');
+}

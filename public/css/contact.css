@@ -1,0 +1,72 @@
+
+
+.auto-logo{
+	position: relative;
+	/*top: 90px;*/
+}
+
+h2{
+    display: block;
+    font-size: 20px;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+    margin-left: 200px
+}
+
+.auto-logo p{
+	font-size: 15px;
+}
+
+.myform{
+	position: relative;
+	/*top: 150px;*/
+    height: 400px;
+    margin-bottom: 150px;
+}
+
+.form-control{
+	height: 25px;
+	width: 400px;
+}
+
+#message{
+	width: 500px;
+	height: 300px;
+}
+
+.send-btn{
+	position: absolute;
+	width: 500px;
+	height: 50px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #22eeff;
+}
+
+.pull-right{
+	float: right;
+
+}
