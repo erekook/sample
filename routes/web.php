@@ -1,5 +1,5 @@
 <?php
-
+use App\Models\User;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -38,6 +38,20 @@ Route::post('comment', 'CommentController@store');
 
 Route::group(['middleware'=>'auth'],function(){
 	Route::get('/monitor','MonitorController@index')->name('monitor');
-	Route::get('/monitor/city',['middleware'=>'city','uses'=>'MonitorController@city'])->name('monitor_city');
+	Route::get('/monitor/city','MonitorController@city')->name('monitor_city');
   Route::get('/monitor/county','MonitorController@county')->name('monitor_county');
+});
+
+Route::get('/secret', function()
+{
+    //Auth::loginUsingId(1);
+
+    //$user = Auth::user();
+    $user=User::find(1);
+    if ($user->hasRole('Admin'))
+    {
+        return 'you are admin';
+    }
+
+    return 'you are a normal person';
 });

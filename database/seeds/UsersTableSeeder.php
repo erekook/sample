@@ -21,7 +21,7 @@ class UsersTableSeeder extends Seeder
       $user->password = 'password';
       $user->activated = true;
       $user->is_admin = true;
-      $user->level=5;
       $user->save();
+
     }
 }
