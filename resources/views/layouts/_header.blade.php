@@ -27,7 +27,17 @@
           <nav>
           <ul class="nav navbar-nav navbar-right">
             @if (Auth::check())
-              <li><a href="{{ route('users.index') }}">用户列表</a></li>
+              @role('Admin')
+              <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                  管理员入口<b class="caret"></b>
+                </a>
+              <ul class="dropdown-menu">
+                <li><a href="{{ route('users.index') }}">用户管理</a></li>
+                <li><a href="{{ route('uploads') }}">文件管理</a></li>
+              </ul>
+              </li>
+              @endrole
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   {{ Auth::user()->name }} <b class="caret"></b>
@@ -48,8 +58,8 @@
                 </ul>
               </li>
             @else
-              <li><a href="{{ route('help') }}">帮助</a></li>
               <li><a href="{{ route('login') }}">登录</a></li>
+              <li><a href="{{ route('signup') }}">注册</a></li>
             @endif
           </ul>
         </nav>

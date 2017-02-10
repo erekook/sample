@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/style.css">
     <script src="//cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    @yield('scripts')
   </head>
   <body>
     @include('layouts._header')
@@ -13,6 +14,9 @@
       <div class="col-md-offset-1 col-md-10">
         @include('shared.messages')
         @yield('content')
+
+      </div>
+      <div class="col-md-offset-1 col-md-10">
         @include('layouts._footer')
       </div>
     </div>

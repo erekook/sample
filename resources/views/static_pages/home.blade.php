@@ -8,6 +8,8 @@
 <style>
 .ck-slide { width:960px ; height: 414px; margin: 0 auto;}
 .ck-slide ul.ck-slide-wrapper { height: 414px;}
+
+
 </style>
 
 <div class="ck-slide">
@@ -48,4 +50,17 @@
 </script>
 
 </div>
+
+<div class="row">
+  <div class="col-md-3 col-md-offset-1">
+    div1
+  </div>
+  <div class="col-md-3 col-md-offset-1">
+    div2
+  </div>
+  <div class="col-md-3 col-md-offset-1">
+    div3
+  </div>
+</div>
+
 @endsection
